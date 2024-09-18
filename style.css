@@ -218,7 +218,7 @@ section h2 {
 section p {
   font-size: 1.1rem;
   line-height: 1.5;
-  padding-left: 2rem;
+  padding-left: 1rem;
 }
 
 .txt-sm {
@@ -289,6 +289,7 @@ section p {
 @media (max-width: 768px) {
   .main-content {
     width: 100%;
+    padding: 0 1rem;
   }
   
   body {
@@ -297,10 +298,15 @@ section p {
   }
   section {
     box-shadow: none;
+    padding: 1.5rem;
+    border-radius: 1.2rem;
   }
-  .main-content {
-    padding: 0 1rem;
+  section p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    padding-left: 0;
   }
+
   .navbar {
     position: fixed;
     top: 0; /* Remove space above the navbar */
@@ -363,5 +369,13 @@ section p {
   .footer-column {
     margin: 1rem 0;
     width: 100%;
+  }
+
+  .footer ul.social-icons {
+    justify-content: center;
+  }
+
+  .footer ul.social-icons li {
+    margin: 0 1rem;
   }
 }
