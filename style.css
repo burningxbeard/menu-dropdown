@@ -290,9 +290,16 @@ section p {
   .main-content {
     width: 100%;
   }
-
+  
+  body {
+    font-size: .725rem;
+    padding-top: 110px;
+  }
   section {
     box-shadow: none;
+  }
+  .main-content {
+    padding: 0 1rem;
   }
   .navbar {
     position: fixed;
@@ -302,6 +309,7 @@ section p {
     border-radius: 0;
     padding: 1rem;
     z-index: 1010;
+    font-size: 1.175rem;
   }
 
   .nav-menu {
