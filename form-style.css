@@ -1,0 +1,136 @@
+/* Base styles */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', Arial, sans-serif;
+    font-size: 1em;
+    line-height: 1.6;
+    transition: background-color 0.3s, color 0.3s;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+/* Light Theme Variables */
+:root {
+    font-size: 12pt;
+    --bg-color: #f9f9f9;
+    --text-color: #333;
+    --input-bg: #fff;
+    --input-border: #ccc;
+    --button-bg: #1E90FF;
+    --button-hover: #0056b3;
+    --reset-bg: #f44336;
+    --reset-hover: #d32f2f;
+}
+
+/* Dark Theme Variables */
+body.dark-theme {
+    --bg-color: #1e1e1e;
+    --text-color: #f9f9f9;
+    --input-bg: #333;
+    --input-border: #555;
+    --button-bg: #1E90FF;
+    --button-hover: #0056b3;
+    --reset-bg: #f44336;
+    --reset-hover: #d32f2f;
+}
+
+form {
+    font-size: 1.6em;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 1px solid var(--input-border);
+    border-radius: 8px;
+    background-color: var(--input-bg);
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+}
+
+legend {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: var(--reset-bg);
+    font-size: 1em;
+    text-transform: uppercase;
+}
+
+.section-title {
+    font-size: 1.825em;
+}
+
+label {
+    display: block;
+    margin-bottom: 4px;
+    font-size: 0.8em;
+    font-weight: bold;
+    padding-left: 4px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid var(--input-border);
+    border-radius: 8px;
+    background-color: var(--input-bg);
+    color: var(--text-color);
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.submit-button {
+    background-color: var(--button-bg);
+    color: white;
+}
+
+.submit-button:hover {
+    background-color: var(--button-hover);
+}
+
+.reset-button {
+    background-color: var(--reset-bg);
+    color: white;
+}
+
+.reset-button:hover {
+    background-color: var(--reset-hover);
+}
+
+/* Theme switcher button */
+.theme-switcher {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    font-size: 1.75rem; /* Increase icon size */
+    cursor: pointer;
+    color: var(--text-color); /* Ensure it uses the correct color */
+    z-index: 1000; /* Bring it to the front */
+}
+
+/* Add hover effect for the switcher */
+.theme-switcher:hover {
+    color: var(--button-bg); /* Change color on hover to make it interactive */
+}
